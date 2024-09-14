@@ -1,0 +1,137 @@
+/* Basic Reset */
+body, h1, h2, h3, p, footer {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+h2 {
+    font-size: 36px;
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    color: #666;
+}
+
+a.button {
+    text-decoration: none;
+    padding: 15px 30px;
+    color: white;
+    background-color: #2ecc71;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* Hero Section */
+#banner {
+    background-image: url('https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2021/03/madbul-e1616609770335.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
+}
+
+#banner h2 {
+    font-size: 48px;
+}
+
+#banner p {
+    font-size: 18px;
+    margin: 20px 0 30px;
+}
+
+/* Main Section */
+#main .box.special {
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 50px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+header.major p {
+    margin: 20px 0 0;
+}
+
+/* Courses Section */
+#courses .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#courses .box {
+    width: 48%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.image.fit {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.button.small {
+    margin-top: 10px;
+    display: inline-flex;
+    padding: 10px 20px;
+    background-color: #3498db;
+}
+
+/* Testimonials Section */
+#testimonials .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+#testimonials .box {
+    width: 48%;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+footer strong {
+    display: block;
+    margin-top: 10px;
+    color: #2c3e50;
+}
+
+/* Call to Action Section */
+#cta {
+    text-align: center;
+    background-color: #1abc9c;
+    color: white;
+    padding: 60px 20px;
+}
+
+#cta h2 {
+    font-size: 36px;
+}
+
+#cta p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+/* Footer Section */
+#footer {
+    text-align: center;
+    padding: 30px;
+    background-color: #34495e;
+    color: white;
+}

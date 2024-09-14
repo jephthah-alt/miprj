@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="styles/drive.css">
+</head>
+<body>
+    <!-- Navbar with Back to Homepage Button -->
+    <header>
+        <button onclick="window.location.href='login.html.';" class="backToHomepage" id="backToHomepage">Back to Homepage</button>
+    </header>
+
+    <!-- Booking Form -->
+    <form id="bookingForm">
+        <h1 class="bf">Booking Form</h1>
+        <!-- Name Field -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <span id="nameError" class="error-message"></span>
+        
+        <!-- Age Field -->
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age">
+        <span id="ageError" class="error-message"></span>
+        
+        <!-- Guardian Details Field -->
+        <label for="guardian">Guardian Details (if under 18):</label>
+        <input type="text" id="guardian" name="guardian">
+        <span id="guardianError" class="error-message"></span>
+        
+        <!-- Phone Field -->
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone">
+        <span id="phoneError" class="error-message"></span>
+        
+        <!-- Email Field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <span id="emailError" class="error-message"></span>
+        
+        <!-- Instructor Field -->
+        <label for="instructor">Preferred Instructor:</label>
+        <select id="instructor" name="instructor">
+            <option value="">Select Instructor</option>
+            <option value="jeph-alt">jeph-alt</option>
+            <option value="Mr.Eazy">Mr. Eazy</option>
+            <option value="idris Nass">Idris Nass</option>
+        </select>
+        <span id="instructorError" class="error-message"></span>
+        
+        <!-- Car Type Field -->
+        <label for="carType">Car Type:</label>
+        <select id="carType" name="carType">
+            <option value="">Select Car Type</option>
+            <option value="manual">Manual</option>
+            <option value="automatic">Automatic</option>
+        </select>
+        <span id="carTypeError" class="error-message"></span>
+
+        <!-- AC Option Field -->
+        <label for="acOption">AC Option:</label>
+        <select id="acOption" name="acOption">
+            <option value="">Select AC Option</option>
+            <option value="withAC">With AC</option>
+            <option value="withoutAC">Without AC</option>
+        </select>
+        <span id="acOptionError" class="error-message"></span>
+
+        <!-- Lesson Time Field -->
+        <label for="lessonTime">Lesson Time:</label>
+        <input type="Time" id="lessonTime" name="lessonTime">
+        <span id="lessonTimeError" class="error-message"></span>
+
+        <label for="lessonHours">How many hours per lesson?</label>
+        <input type="number" id="lessonHours" placeholder="Enter number of hours">
+        <div id="hoursError" class="error-message"></div>
+
+        <!-- Lesson Date Field -->
+        <label for="lessonDate">Lesson Date:</label>
+        <input type="date" id="lessonDate" name="lessonDate">
+        <span id="lessonDateError" class="error-message"></span>
+
+        <!-- Days Per Week Field -->
+        <label for="daysPerWeek">Days Per Week:</label>
+        <select id="daysPerWeek" name="daysPerWeek">
+            <option value="">Select Days Per Week</option>
+            <option value="1">1 day</option>
+            <option value="2">2 days</option>
+            <option value="3">3 days</option>
+            <option value="4">4 days</option>
+            <option value="5">5 days</option>
+            <option value="6">6 days</option>
+            <option value="7">7 days</option>
+        </select>
+        <span id="daysPerWeekError" class="error-message"></span>
+
+        <!-- Lesson Days Field -->
+        <label for="lessonDays">Lesson Days:</label>
+        <select id="lessonDays" name="lessonDays">
+            <option value="monday">Monday</option>
+            <option value="tuesday">Tuesday</option>
+            <option value="wednesday">Wednesday</option>
+            <option value="thursday">Thursday</option>
+            <option value="friday">Friday</option>
+            <option value="saturday">Saturday</option>
+            <option value="sunday">Sunday</option>
+        </select>
+        <span id="lessonDaysError" class="error-message"></span>
+
+        <!-- Submit Button -->
+        <button type="button" onclick="validateForm()">Book</button>
+    </form>
+
+    <!-- Modal for Booking Summary -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close-button">&times;</span>
+            <h2>Booking Summary</h2>
+            <div id="bookingSummary"></div>
+        </div>
+    </div>
+
+    <script src="js/drive.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+       
